@@ -1,0 +1,844 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+    integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i|Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Bino</title>
+</head>
+
+ <body>
+ 	<div class="body-wrapper">
+		<header class="header">
+		  <div class="header-container">
+		    <video loop muted autoplay poster="images/header-bg/png" class="fullscreen-bg__video">
+		      <source src="Pexels.mp4" type="video/mp4">
+		      <source src="Pexels.webm" type="video/webm">
+		    </video>
+		    <div class="header-wrapper flex-wrapper">
+		      <div class="header__box--nav">
+		        <div class="header-logo__wrapper">
+		          <a href="#">
+		              <img src="images/ino.png" alt="" class="header__logo">
+		          </a>
+		        </div>
+		        <nav class="menu">
+		          <ul class="menu__list">
+		            <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">ABOUT US</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">PORTFOLIO</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">PRICING</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">TEAM</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
+		            <li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
+		          </ul>
+		        </nav>
+		        <div id="toggle">
+		          <i class="fas fa-toggle-on"></i>
+		        </div>
+		      </div>
+		      <div class="header__box--content">
+		        <div class="header__content">
+		          <span class="header__subtitle">Our Clients Are Our First Priority</span>
+		          <h1 class="header__title">WELCOME TO BINO</h1>
+		          <span class="span"></span>
+		          <p class="header__text">Lorem Ipsum is simply <span class="header-next">...</span><span
+		              class="header__text--hidden">dummy text of the printing and typesetting industry. Lorem Ipsum
+		              has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+		              type and scrambled it to make a type specimen book.</span><span class="header-close">Close</span></p>
+		          <div class="header__buttons">
+		            <button class="header__button button--big">GET STARTED NOW</button>
+		            <button class="header__button button--big">LEARN MORE</button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- <ul class="header-bottom">
+		    <li class="header-bottom__item bottom-item--left"></li>
+		    <li class="header-bottom__item bottom-item--center"><i class="fas fa-anchor"></i></li>
+		    <li class="header-bottom__item bottom-item--right"></li>
+		  </ul> -->
+		</header>
+		<section class="features">
+		  <div class="features-container">
+		    <!-- <span class="features__icon"><i class="fas fa-anchor"></i></span> -->
+		    <div class="features-wrapper flex-wrapper">
+		      <div class="features__block">
+		        <div class="features__box">
+		          <div class="features-icon__wrapper">
+		              <i class="fas fa-glasses"></i>
+		          </div>
+		          <div class="features__content">
+		            <h3 class="features__title">SLEEK DESIGN</h3>
+		            <p class="features__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+		              has been the industry.</p>
+		          </div>
+		        </div>
+		        <div class="features__box">
+		          <div class="features-icon__wrapper">
+		              <i class="far fa-heart"></i>
+		          </div>
+		          <div class="features__content">
+		            <h3 class="features__title">CLEAN CODE</h3>
+		            <p class="features__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+		              has been the industry.</p>
+		          </div>
+		        </div>
+		        <div class="features__box">
+		          <div class="features-icon__wrapper">
+		              <i class="far fa-lightbulb"></i>
+		          </div>
+		          <div class="features__content">
+		            <h3 class="features__title">CREATIVE IDEAS</h3>
+		            <p class="features__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+		              has been the industry.</p>
+		          </div>
+		        </div>
+		        <div class="features__box">
+		          <div class="features-icon__wrapper">
+		              <i class="fas fa-comments"></i>
+		          </div>
+		          <div class="features__content">
+		            <h3 class="features__title">FREE SUPPORT</h3>
+		            <p class="features__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+		              has been the industry.</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		
+		</section>
+		<section class="history">
+		  <div class="history-container containers-size">
+		    <div class="history-wrapper flex-wrapper">
+		      <div class="history__box box-left"><img src="images/Monitor.png" alt=""></div>
+		      <div class="history__box box-right">
+		        <h2 class="history__title title-section">
+		          OUR HISTORY
+		        </h2>
+		        <p class="history__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ip sum
+		          has been the industry's standard dummy text ever since the 1500s, when an unk- nown printer took a galley of
+		          type and scrambled it to make a type specimen book.
+		        </p>
+		        <p class="history__text">It has survived not only five centuries, but also the leap into electronic typesetting,
+		          remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+		          containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+		          including versions of Lorem Ipsum.
+		        </p>
+		        <button class="history__button button--big">BROWSE OUR WORK</button>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="services">
+		  <div class="services-container">
+		    <div class="services-wrapper">
+		      <div class="services__box--left box-left containers-size">
+		        <h2 class="services__title title-section">
+		          OUR services
+		        </h2>
+		        <div class="services-block">
+		          <div class="services-block__wrapper services-active">
+		            <ul class="services-block__list">
+		              <li class="services-block__item">
+		                <div class="services-block__box">
+		                  <div class="services-block__icon-wrapper">
+		                    <i class="services-block__icon fas fa-tv"></i>
+		                  </div>
+		                  <div class="services-block__content">
+		                    <h4 class="services-block__title">WEB DESIGN №1</h4>
+		                    <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                      industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                    </p>
+		                  </div>
+		                </div>
+		              </li>
+		              <li class="services-block__item">
+		                <div class="services-block__box">
+		                  <div class="services-block__icon-wrapper">
+		                    <i class="services-block__icon fas fa-layer-group"></i>
+		                  </div>
+		                  <div class="services-block__content">
+		                    <h4 class="services-block__title">PRINT DESIGN №1</h4>
+		                    <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                      industry.
+		                      Lorem Ip sum has been the industry's standard dummy text ever.
+		                    </p>
+		                  </div>
+		                </div>
+		              </li>
+		              <li class="services-block__item">
+		                <div class="services-block__box">
+		                  <div class="services-block__icon-wrapper">
+		                    <i class="services-block__icon fas fa-camera"></i>
+		                  </div>
+		                  <div class="services-block__content">
+		                    <h4 class="services-block__title">PHOTOGRAPHY №1</h4>
+		                    <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                      industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                    </p>
+		                  </div>
+		                </div>
+		              </li>
+		            </ul>
+		          </div>
+		          <div class="services-block__wrapper">
+		              <ul class="services-block__list">
+		                <li class="services-block__item ">
+		                  <div class="services-block__box">
+		                    <div class="services-block__icon-wrapper">
+		                      <i class="services-block__icon fas fa-tv"></i>
+		                    </div>
+		                    <div class="services-block__content">
+		                      <h4 class="services-block__title">WEB DESIGN №2</h4>
+		                      <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                        industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                      </p>
+		                    </div>
+		                  </div>
+		                </li>
+		                <li class="services-block__item">
+		                  <div class="services-block__box">
+		                    <div class="services-block__icon-wrapper">
+		                      <i class="services-block__icon fas fa-layer-group"></i>
+		                    </div>
+		                    <div class="services-block__content">
+		                      <h4 class="services-block__title">PRINT DESIGN №2</h4>
+		                      <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                        industry.
+		                        Lorem Ip sum has been the industry's standard dummy text ever.
+		                      </p>
+		                    </div>
+		                  </div>
+		                </li>
+		                <li class="services-block__item">
+		                  <div class="services-block__box">
+		                    <div class="services-block__icon-wrapper">
+		                      <i class="services-block__icon fas fa-camera"></i>
+		                    </div>
+		                    <div class="services-block__content">
+		                      <h4 class="services-block__title">PHOTOGRAPHY №2</h4>
+		                      <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                        industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                      </p>
+		                    </div>
+		                  </div>
+		                </li>
+		              </ul>
+		            </div>
+		            <div class="services-block__wrapper">
+		                <ul class="services-block__list">
+		                  <li class="services-block__item">
+		                    <div class="services-block__box">
+		                      <div class="services-block__icon-wrapper">
+		                        <i class="services-block__icon fas fa-tv"></i>
+		                      </div>
+		                      <div class="services-block__content">
+		                        <h4 class="services-block__title">WEB DESIGN №3</h4>
+		                        <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                          industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                        </p>
+		                      </div>
+		                    </div>
+		                  </li>
+		                  <li class="services-block__item">
+		                    <div class="services-block__box">
+		                      <div class="services-block__icon-wrapper">
+		                        <i class="services-block__icon fas fa-layer-group"></i>
+		                      </div>
+		                      <div class="services-block__content">
+		                        <h4 class="services-block__title">PRINT DESIGN №3</h4>
+		                        <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                          industry.
+		                          Lorem Ip sum has been the industry's standard dummy text ever.
+		                        </p>
+		                      </div>
+		                    </div>
+		                  </li>
+		                  <li class="services-block__item">
+		                    <div class="services-block__box">
+		                      <div class="services-block__icon-wrapper">
+		                        <i class="services-block__icon fas fa-camera"></i>
+		                      </div>
+		                      <div class="services-block__content">
+		                        <h4 class="services-block__title">PHOTOGRAPHY №3</h4>
+		                        <p class="services-block__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+		                          industry. Lorem Ip sum has been the industry's standard dummy text ever.
+		                        </p>
+		                      </div>
+		                    </div>
+		                  </li>
+		                </ul>
+		              </div>
+		          <ul class="services-block__buttons">
+		            <li class="services-block__button services-focus"><span></span></li>
+		            <li class="services-block__button"><span></span></li>
+		            <li class="services-block__button"><span></span></li>
+		          </ul>
+		        </div>
+		      </div>
+		      <div class="services__box--right box-right">
+		        <div class="services__img-wrapper">
+		          <img src="images/main-png.png" alt="" class="services__img">
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="recent">
+		  <div class="recent-container containers-size">
+		    <div class="recent-wrapper">
+		      <div class="recent__header">
+		        <h2 class="recent__title">
+		          RECENT WORKS
+		        </h2>
+		        <span class="recent__subtitle subtitle">It has survived not only five centuries, but also the leap scrambled it
+		          to make a type.</span>
+		        <span class="span"></span>
+		      </div>
+		      <div class="recent__slider-wrapper">
+		        <ul class="recent__slider-list">
+		          <li class="recent__slider-item">ALL</li>&#47;
+		          <li class="recent__slider-item">PRINT DESIGN</li>&#47;
+		          <li class="recent__slider-item">ANIMATION</li>&#47;
+		          <li class="recent__slider-item">ART</li>&#47;
+		          <li class="recent__slider-item">WEB DESIGN</li>&#47;
+		          <li class="recent__slider-item">PHOTOGRAPHY</li>&#47;
+		          <li class="recent__slider-item">VIDEO</li>
+		        </ul>
+		        <div class="recent__slider-block">
+		          <div class="recent__slider-box" data-name="print"><img src="images/works.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="art"><img src="images/work2.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">T-SHIRT DESIGN</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="animation"><img src="images/work3.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="web"><img src="images/work4.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="animation"><img src="images/work5.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="video"><img src="images/work6.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="photography"><img src="images/work7.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		          <div class="recent__slider-box" data-name="web"><img src="images/work8.png" alt="photo">
+		            <div class="recent__slider-box--hover">
+		              <ul>
+		                <li><span></span></li>
+		                <li class="hover-title">Lorem ipsum</li>
+		                <li class="hover-sybtitle">art &#47; t-shirt</li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="study">
+		  <div class="study-container containers-size">
+		    <div class="study__header">
+		      <h2 class="study__title">
+		        CASE STUDY
+		      </h2>
+		      <span class="study__subtitle subtitle">A brief story about how this process works, keep an eye till the
+		        end.</span>
+		      <span class="span"></span>
+		    </div>
+		    <div class="study-wrapper">
+		      <div class="study-main__block">
+		        <div class="study-main__box box-left">
+		          <div class="box-left__wrapper">
+		            <div class="box-left__icon-wrapper">
+		              <div class="box-left__icon">
+		                             <i class="far fa-lightbulb"></i>
+		              </div>
+		            </div>
+		            <div class="box-left__content">
+		              <h3 class="box-left__title">ACCUMULATE CREATIVE IDEAS</h3>
+		              <p class="box-left__text">Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem
+		                Ipsum
+		                has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting let. Lorem Ipsum
+		                has been the industry Printing and typelorem Ipsum has been the setting let.</p>
+		              <button class="box-left__button button--middle">read more</button>
+		            </div>
+		            <ul class="box-left__nav">
+		              <li class="box-left__btn study-active"><span></span></li>
+		              <li class="box-left__btn"><span></span></li>
+		              <li class="box-left__btn"><span></span></li>
+		            </ul>
+		          </div>
+		        </div>
+		        <div class="study-main__box box-right">
+		          <div class="box-right__wrapper-img"><img src="images/study-bg.png" alt="" class="box-right__img"></div>
+		        </div>
+		      </div>
+		    </div>
+		
+		  </div>
+		</section>
+		<section class="catalog">
+		  <div class="catalog-container">
+		    <div class="catalog-wrapper flex-wrapper">
+		      <div class="catalog__block">
+		        <div class="catalog__box">
+		          <div class="catalog-icon__wrapper">
+		            <i class="far fa-heart"></i>
+		          </div>
+		          <div class="catalog__content">
+		            <span class="catalog__number">3891</span>
+		            <p class="catalog__text">User Favourites</p>
+		          </div>
+		        </div>
+		        <div class="catalog__box">
+		          <div class="catalog-icon__wrapper">
+		            <i class="fas fa-tag"></i>
+		          </div>
+		          <div class="catalog__content">
+		            <span class="catalog__number">281K</span>
+		            <p class="catalog__text">Posts Last 24 Hours</p>
+		          </div>
+		        </div>
+		        <div class="catalog__box">
+		          <div class="catalog-icon__wrapper">
+		            <i class="far fa-thumbs-up"></i>
+		          </div>
+		          <div class="catalog__content">
+		            <span class="catalog__number">618</span>
+		            <p class="catalog__text">Total Posts</p>
+		          </div>
+		        </div>
+		        <div class="catalog__box">
+		          <div class="catalog-icon__wrapper">
+		            <i class="far fa-star"></i>
+		          </div>
+		          <div class="catalog__content">
+		            <span class="catalog__number">178</span>
+		            <p class="catalog__text">Campaigns</p>
+		          </div>
+		        </div>
+		        <div class="catalog__box">
+		          <div class="catalog-icon__wrapper">
+		            <i class="far fa-bookmark"></i>
+		          </div>
+		          <div class="catalog__content">
+		            <span class="catalog__number">285</span>
+		            <p class="catalog__text">Amazing Features</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="pricing">
+		  <div class="pricing-container containers-size">
+		    <div class="pricing__header">
+		      <h2 class="pricing__title">
+		        OUR PRICING
+		      </h2>
+		      <span class="pricing__subtitle subtitle">A 30 days free trial for all. A brief story about how this process works,
+		        keep an eye till the end.</span>
+		      <span class="span"></span>
+		    </div>
+		    <div class="pricing-wrapper flex-wrapper">
+		      <div class="pricing-main__block">
+		        <div class="pricing__box box">
+		          <div class="box__header">
+		            <h4 class="box__title">STARTER</h4>
+		          </div>
+		          <div class="box__circle">
+		            <span class="box__subtitle">
+		              <i class="fas fa-dollar-sign">
+		              </i>
+		              19
+		            </span>
+		            <span class="box__month">per month</span>
+		          </div>
+		          <div class="box__main">
+		            <ul class="box__list">
+		              <li class="box__item">Competition Analysis Methods</li>
+		              <li class="box__item">All Ranked URLs</li>
+		              <li class="box__item">International Support System</li>
+		              <li class="box__item">Social Media Tracking</li>
+		            </ul>
+		          </div>
+		          <button class="button button--small">CHOOSE PLAN</button>
+		        </div>
+		        <div class="pricing__box box">
+		            <div class="box__header">
+		                <h4 class="box__title">PREMIUM</h4>
+		              </div>
+		              <div class="box__circle">
+		                <span class="box__subtitle">
+		                  <i class="fas fa-dollar-sign">
+		                  </i>
+		                  39
+		                </span>
+		                <span class="box__month">per month</span>
+		              </div>
+		          <div class="box__main">
+		            <ul class="box__list">
+		              <li class="box__item">Competition Analysis Methods</li>
+		              <li class="box__item">All Ranked URLs</li>
+		              <li class="box__item">International Support System</li>
+		              <li class="box__item">Social Media Tracking</li>
+		            </ul>
+		          </div>
+		          <button class="button button--small">CHOOSE PLAN</button>
+		        </div>
+		        <div class="pricing__box box">
+		            <div class="box__header">
+		                <h4 class="box__title">BUSINESS</h4>
+		              </div>
+		              <div class="box__circle">
+		                <span class="box__subtitle">
+		                  <i class="fas fa-dollar-sign">
+		                  </i>
+		                  99
+		                </span>
+		                <span class="box__month">per month</span>
+		              </div>
+		          <div class="box__main">
+		            <ul class="box__list">
+		              <li class="box__item">Competition Analysis Methods</li>
+		              <li class="box__item">All Ranked URLs</li>
+		              <li class="box__item">International Support System</li>
+		              <li class="box__item">Social Media Tracking</li>
+		            </ul>
+		          </div>
+		          <button class="button button--small">CHOOSE PLAN</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="team">
+		  <div class="team-container containers-size">
+		    <div class="team__header">
+		      <h2 class="team__title">
+		        OUR TEAM
+		      </h2>
+		      <span class="team__subtitle subtitle">Meet the craziest team. Share your thoughts with them.</span>
+		      <span class="span"></span>
+		    </div>
+		    <div class="team__block flex-wrapper">
+		      <div class="team__offset"></div>
+		      <div class="team__absolute">
+		        <ul class="team__list">
+		          <li class="team__item">
+		            <ul class="team__content">
+		              <li class="team__wrapper-img"><img src="images/person-1.png" alt=""></li>
+		              <li class="team__info">
+		                <span class="team__name">Lorem ipsum.</span>
+		                <span class="team__profession">Lorem</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li class="team__item">
+		            <ul class="team__content">
+		              <li class="team__wrapper-img">
+		                <img src="images/person-2.png" alt=""></li>
+		              <li class="team__info">
+		                <span class="team__name">Kazi Erfan</span>
+		                <span class="team__profession">UI/UX Designer</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li class="team__item">
+		            <ul class="team__content">
+		              <li class="team__wrapper-img"><img src="images/person-3.png" alt=""></li>
+		              <li class="team__info">
+		                <span class="team__name">Lorem ipsum.</span>
+		                <span class="team__profession">Lorem</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li class="team__item">
+		            <ul class="team__content">
+		              <li class="team__wrapper-img"><img src="images/person-4.png" alt=""></li>
+		              <li class="team__info">
+		                <span class="team__name">Lorem ipsum.</span>
+		                <span class="team__profession">Lorem</span>
+		              </li>
+		            </ul>
+		          </li>
+		          <li class="team__item">
+		            <ul class="team__content">
+		              <li class="team__wrapper-img"><img src="images/person-5.png" alt=""></li>
+		              <li class="team__info">
+		                <span class="team__name">Lorem ipsum.</span>
+		                <span class="team__profession">Lorem</span>
+		              </li>
+		            </ul>
+		          </li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="blog">
+		  <div class="blog-container containers-size">
+		    <div class="blog__header">
+		      <h2 class="blog__title">
+		          OUR BLOG
+		      </h2>
+		      <span class="blog__subtitle subtitle">Suspendisse sed eros mollis, tincidunt felis eget, interdum eratullam sit amet odio.</span>
+		      <span class="span"></span>
+		    </div>
+		    <div class="blog__block grid-wrapper">
+		      <div class="blog__box box box-coffee">
+		        <div class="box--left">
+		          <div class="box__wrapper-img"><img src="images/blog1.png" alt=""></div>
+		        </div>
+		        <div class="box--right">
+		          <div class="box__info">
+		            <span class="box__subtitle">art / t-shirt</span>
+		            <div class="box__title">T-SHIRT DESIGN</div>
+		          </div>
+		          <div class="box__content">
+		            <p class="box__text">
+		              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu
+		              Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it
+		              to make a type specimen book.
+		              <span class="box__text--hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+		                consectetur. Eius animi officiis aliquid adipisci nulla nisi reiciendis corporis in neque, voluptas
+		                itaque, perferendis vel officia debitis voluptate quod quaerat ipsum atque, nostrum unde aperiam
+		                voluptates accusamus quos? Repellendus dolore laudantium at. Odit quae voluptatum saepe rem et quisquam
+		                nemo eveniet sunt. Tempore fuga vel, cupiditate totam libero architecto ipsam explicabo aperiam ratione
+		                doloremque facilis perferendis numquam saepe eum eaque magni dolor voluptatum. Beatae ipsum quis
+		                nesciunt omnis id dolor voluptas, dolore maxime quisquam odit. Praesentium ut amet accusamus dolorem
+		                possimus modi repellat porro consequatur minus nobis nisi, quibusdam nihil. </span>
+		            </p>
+		            <button class="box__button--open">Read More <span>&#187;</span></button>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="blog__box box box-clock">
+		        <div class="box--left">
+		          <div class="box__wrapper-img"><img src="images/blog2.png" alt=""></div>
+		        </div>
+		        <div class="box--right">
+		          <div class="box__info">
+		            <span class="box__subtitle">art / t-shirt</span>
+		            <div class="box__title">T-SHIRT DESIGN</div>
+		          </div>
+		          <div class="box__content">
+		            <p class="box__text">
+		              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu
+		              Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it
+		              to make a type specimen book.
+		              <span class="box__text--hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+		                consectetur. Eius animi officiis aliquid adipisci nulla nisi reiciendis corporis in neque, voluptas
+		                itaque, perferendis vel officia debitis voluptate quod quaerat ipsum atque, nostrum unde aperiam
+		                voluptates accusamus quos? Repellendus dolore laudantium at. Odit quae voluptatum saepe rem et quisquam
+		                nemo eveniet sunt. Tempore fuga vel, cupiditate totam libero architecto ipsam explicabo aperiam ratione
+		                doloremque facilis perferendis numquam saepe eum eaque magni dolor voluptatum. Beatae ipsum quis
+		                nesciunt omnis id dolor voluptas, dolore maxime quisquam odit. Praesentium ut amet accusamus dolorem
+		                possimus modi repellat porro consequatur minus nobis nisi, quibusdam nihil. </span>
+		            </p>
+		            <button class="box__button--open">Read More<span>&#187;</span></button>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="blog__box box box-road">
+		        <div class="box--left">
+		          <div class="box__wrapper-img"><img src="images/blog3.png" alt=""></div>
+		        </div>
+		        <div class="box--right">
+		          <div class="box__info">
+		            <span class="box__subtitle">art / t-shirt</span>
+		            <div class="box__title">T-SHIRT DESIGN</div>
+		          </div>
+		          <div class="box__content">
+		            <p class="box__text">
+		              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu
+		              Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it
+		              to make a type specimen book.<br>
+		              <span class="box__text--hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+		                consectetur. Eius animi officiis aliquid adipisci nulla nisi reiciendis corporis in neque, voluptas
+		                itaque, perferendis vel officia debitis voluptate quod quaerat ipsum atque, nostrum unde aperiam
+		                voluptates accusamus quos? Repellendus dolore laudantium at. Odit quae voluptatum saepe rem et quisquam
+		                nemo eveniet sunt. Tempore fuga vel, cupiditate totam libero architecto ipsam explicabo aperiam ratione
+		                doloremque facilis perferendis numquam saepe eum eaque magni dolor voluptatum. Beatae ipsum quis
+		                nesciunt omnis id dolor voluptas, dolore maxime quisquam odit. Praesentium ut amet accusamus dolorem
+		                possimus modi repellat porro consequatur minus nobis nisi, quibusdam nihil. </span>
+		            </p>
+		            <button class="box__button--open">Read More<span>&#187;</span></button>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="blog__box box box-car">
+		        <div class="box--left">
+		          <div class="box__wrapper-img"><img src="images/blog4.png" alt=""></div>
+		        </div>
+		        <div class="box--right">
+		          <div class="box__info">
+		            <span class="box__subtitle">art / t-shirt</span>
+		            <div class="box__title">T-SHIRT DESIGN</div>
+		          </div>
+		          <div class="box__content">
+		            <p class="box__text">
+		              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indu
+		              Stry's standard dummy text ever since the 1500s, an unknown printer took a galley of type a scrambled it
+		              to make a type specimen book.
+		              <span class="box__text--hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet,
+		                consectetur. Eius animi officiis aliquid adipisci nulla nisi reiciendis corporis in neque, voluptas
+		                itaque, perferendis vel officia debitis voluptate quod quaerat ipsum atque, nostrum unde aperiam
+		                voluptates accusamus quos? Repellendus dolore laudantium at. Odit quae voluptatum saepe rem et quisquam
+		                nemo eveniet sunt. Tempore fuga vel, cupiditate totam libero architecto ipsam explicabo aperiam ratione
+		                doloremque facilis perferendis numquam saepe eum eaque magni dolor voluptatum. Beatae ipsum quis
+		                nesciunt omnis id dolor voluptas, dolore maxime quisquam odit. Praesentium ut amet accusamus dolorem
+		                possimus modi repellat porro consequatur minus nobis nisi, quibusdam nihil. </span>
+		            </p>
+		            <button class="box__button--open">Read More<span>&#187;</span></button>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</section>
+		<section class="touch">
+		  <div class="touch-container containers-size">
+		    <div class="touch__header">
+		      <h2 class="touch__title">
+		        kEEP IN TOUCH
+		      </h2>
+		      <span class="touch__subtitle subtitle">Nullam sit amet odio eu est aliquet euismod a a urna. Proin eu urna
+		        suscipit, dictum quam nec.</span>
+		      <span class="span"></span>
+		    </div>
+		    <div class="touch__main flex-wrapper">
+		        <div class="touch__block">
+		          <div class="touch__box box--left">
+		              <address class="touch__addreas address">
+		                  <ul class="address__list">
+		                    <li class="address__item">
+		                      <p class="address__title">OUR ADDRESS</p>
+		                      <p class="address__street">House #13, Streat road, Sydney 2310 Australia</p>
+		                    </li>
+		                    <li class="address__item">
+		                      <p class="address__title">CALL US</p>
+		                      <p class="address__phone">+ 880 168 109 1425 <br>+ 0216809142</p>
+		                    </li>
+		                    <li class="address__item">
+		                      <p class="address__title">EMAIL US</p>
+		                      <p class="address__email">contactus@email.com</p>
+		                    </li>
+		                  </ul>
+		                </address>
+		          </div>
+		          <div class="touch__box box--right">
+		              <form class="touch__form form">
+		                  <ul class="form__list">
+		                    <li class="form__item">
+		                      <!-- <label for="name">Name</label> -->
+		                      <input type="text" id="name" placeholder="Name">
+		                    </li>
+		                    <li class="form__item">
+		                        <!-- <label for="name">Email</label> -->
+		                        <input type="email" id="email" placeholder="Email">
+		                       </li>
+		                    <li class="form__item">
+		                        <!-- <label for="name">Subject</label> -->
+		                        <input type="text" id="name" placeholder="Subject">
+		                        </li>
+		                    <li class="form__item"><textarea placeholder="Message"></textarea>
+		                      </li>
+		                  </ul>
+		                  <button class="form__button button--form">SEND MESSAGE</button>
+		                </form>
+		          </div>
+		        </div>
+		     </div>
+		  </div>
+		</section>
+		<footer class="footer">
+		  <div class="footer-container containers-size">
+		    <div class="footer__block">
+		      <p class="footer__title"> Let's Get Started Now. It's FREE!</p>
+		      <p class="footer__subtitle"> 30 day free trial. Free plan allows up to 2 projects. Pay if you need more. Cancel
+		        anytime. No catches.</p>
+		      <button class="footer__button button--big">start free trial</button>
+		    </div>
+		  </div>
+		  <div class="footer__contact contact">
+		    <div class="contact__block flex-wrapper">
+		      <ul class="contact__list">
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-facebook-f"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-twitter"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fas fa-rss-square"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-google-plus-g"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-linkedin"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-skype"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-vimeo-v"></i></a></li>
+		        <li class="contact__item"><a href="#" class="contact__link"><i class="fab fa-tumblr"></i></a></li>
+		      </ul>
+		      <span class="contact__text">Lorem ipsum. <span>&#169;</span> All Rights Reserved </span>
+		    </div>
+		  </div>
+		</footer>
+		
+		
+		
+		 
+	 </div>
+	 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	   crossorigin="anonymous"></script>
+	 <script type="text/javascript" src="js/all.js"></script>
+ </body>
+ </html>

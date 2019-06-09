@@ -1,0 +1,63 @@
+.button {
+  @include btn-size($btn-big-w, $btn-big-h);
+  background: 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 0.2em;
+  font-weight: 700;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+  box-shadow: 0px 7px 5px -4px rgba(0,0,0,0.1);
+  &:hover {
+    background-color: $color-red;
+    border: 1px solid transparent;
+  }
+}
+
+.button--big {
+  margin: 24px 14px 18px;
+  @extend .button;
+  border: 1px solid #fff;
+  &:hover{
+    border: 1px solid $color-red;
+  }
+}
+
+.button--middle {
+  @extend .button;
+  @include btn-size($btn-mid-w, $btn-mid-h);
+  background-color: $color-red;
+  border: 1px solid $color-red;
+
+  &:hover {
+    background-color: $color-gray;
+    border: 1px solid $color-gray;
+    
+  }
+}
+
+.button--small {
+  @extend .button;
+  @include btn-size($btn-small-w, $btn-small-h);
+  background-color: $color-gray;
+  border: 1px solid $color-gray;
+  outline: none;
+  &:hover {
+    background-color: $color-red;
+    border: 1px solid $color-red;
+  }
+}
+
+
+.button--form {
+  @extend .button;
+  @include btn-size($btn-form-w, $btn-form-h);
+  background-color: $color-red;
+  border: 1px solid $color-red;
+
+  &:hover {
+    background-color: $color-gray;
+    border: 1px solid $color-gray;
+  }
+}

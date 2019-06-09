@@ -1,0 +1,165 @@
+.pricing {
+  &-container {
+    background-color: #fff;
+  }
+
+  &__header {
+    @include page-header();
+  }
+
+  &-main__block {
+    @include row-flex();
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__box {
+    @include pricing(4, 1920px);
+
+    @include pricing(9, 720px) {
+      margin: 10px;
+    }
+
+    ;
+
+  }
+
+  .box {
+    padding-bottom: 45px;
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+
+    &:hover {
+
+      .box__header {
+        background-color: $color-red;
+        transition: 0.5s;
+      }
+
+      .box__subtitle {
+        color: $color-red;
+        transition: 0.5s;
+      }
+
+      .button--small {
+        background-color: $color-red;
+        border: 1px solid $color-red;
+        transition: 0.5s;
+
+      }
+    }
+
+    &__header {
+      width: 100%;
+      background-color: $color-gray;
+      transition: 0.5s;
+    }
+
+    &__title {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 600;
+      text-transform: uppercase;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 3px;
+
+      padding: {
+        top: 45px;
+        bottom: 130px;
+      }
+
+      @include md-block() {
+        padding: {
+          top: 25px;
+          bottom: 60px;
+        }
+
+        font-size: 18px;
+      }
+
+
+    }
+
+    &__circle {
+      border-radius: 50%;
+      background-color: #fff;
+      width: 154px;
+      height: 154px;
+      @include flex-center();
+      margin-top: -74px;
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, .5);
+      flex-direction: column;
+
+      @include md-block() {
+        width: 84px;
+        height: 84px;
+        margin-top: -37px;
+      }
+
+      @include md-block() {
+        width: 74px;
+        height: 74px;
+        margin-top: -37px;
+      }
+
+
+    }
+
+    &__subtitle {
+      font-size: 36px;
+      font-weight: bold;
+      line-height: 0.556;
+      text-align: center;
+      word-spacing: -5px;
+      font-family: "Source Sans Pro";
+      transition: 0.5s;
+     
+
+      margin: {
+        bottom: 5px;
+        top: -5px;
+      }
+
+      @include md-block() {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      @include sm-block() {
+        font-size: 20px;
+        
+      }
+    }
+
+    &__month {
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+
+    &__list {
+      margin: {
+        top: 33px;
+        bottom: 36px;
+      }
+
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__item {
+      text-align: center;
+      padding: 10px 0;
+
+      @media screen and (max-width: 720px) {
+        padding: 5px 0;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,261 @@
+.services {
+  &-container {
+    background: #202020;
+  }
+
+  &-wrapper {
+    // @include flex-center();
+    display: flex;
+  }
+
+  &__title {
+    text-align: right;
+
+    padding: {
+      right: 0.9em;
+    }
+
+    margin: {
+      top: 0.3em;
+    }
+
+    border-right: 5px solid $color-red;
+    margin-bottom: 2em;
+  }
+
+  &__item {
+    display: none;
+    opacity: 0;
+  }
+
+  &-block {
+    display: flex;
+
+    @include xs-block() {
+      position: relative;
+      display: flex;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+
+
+    &__buttons {
+      position: absolute;
+      left: 4em;
+      top: 50%;
+
+      @include xs-block() {
+        position: relative;
+        display: flex;
+        width: 50%;
+        margin: 0 auto 2em;
+
+      }
+    }
+
+    &__button {
+      display: block;
+      padding: 7px;
+      cursor: pointer;
+
+      span {
+        display: block;
+        height: 35px;
+        width: 1px;
+        background-color: $color-gray;
+
+        @include xs-block() {
+          width: 30px;
+          height: 3px;
+          
+        }
+
+      }
+
+      &:hover,
+      &:focus {
+        span {
+          background-color: $color-red;
+        }
+      }
+
+      
+    }
+  }
+
+
+  .box-left {
+    flex: 1 1 50%;
+    position: relative;
+
+
+
+    padding: {
+      left: 19.5%;
+      right: 5em;
+    }
+
+    @media screen and (max-width: 1200px) {
+      padding: 0 2em;
+      flex: 1 1 70%;
+      width: 80%;
+      margin-left: auto;
+    }
+  }
+
+  .box-right {
+    flex: 1 1 30%;
+    display: flex;
+    max-width: 880px;
+    // background-image: url(../images/main-png.png);
+    // // background-size: contain;
+    // background-repeat: no-repeat;
+    background-size: cover;
+
+    img {
+      display: block;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+
+  &-block {
+    &__list {
+      width: 90%;
+      margin-left: auto;
+      margin-right: 1em;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: row-reverse;
+      position: relative;
+      text-align: right;
+    }
+
+    &__wrapper {
+      display: none;
+      opacity: 1;
+    }
+
+    &__item {
+
+      &:nth-child(even) {
+        margin: 4.2em 0;
+
+        @media screen and (max-width: 1200px) {
+          margin: 2.2em 0;
+        }
+      }
+    }
+
+    &__icon-wrapper {
+      margin-left: auto;
+      @include flex-center;
+      display: flex;
+      position: absolute;
+      top: 1.3em;
+      right: -8em;
+      z-index: 10;
+
+      @media screen and (max-width: 1200px) {
+        position: relative;
+        top: 0;
+        right: -2em;
+      }
+    }
+
+    &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e74c3c;
+      font-size: 1.8em;
+      height: 2.3em;
+      width: 2.3em;
+      border-radius: 50%;
+      background-color: #f4f5f9;
+      box-shadow: 0 0 0 0.2em rgba(255, 255, 255, 0.5);
+
+      @include xxs-block() {
+        font-size: 0.8em;
+        height: 2em;
+        width: 2em;
+      }
+    }
+
+    &__title {
+      color: $color-red;
+      font-weight: 600;
+      font-size: 1.2em;
+      letter-spacing: 0.5px;
+      padding-bottom: 0.3em;
+    }
+
+    &__text {
+      @include text-core;
+    }
+  }
+
+
+
+  &__button {
+    padding: 7px;
+
+    span {
+      width: 1px;
+      height: 15px;
+    }
+  }
+}
+
+
+
+.services-focus {
+  span {
+    background-color: $color-red;
+  }
+
+}
+
+.services-active {
+  display: block;
+  animation: services-show 0.3s ease 0.3s both;
+}
+
+@keyframes services-show {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) scale(0);
+  }
+
+  20% {
+    opacity: 0.2;
+    transform: translateX(-80%) scale(0.2);
+  }
+
+  40% {
+    opacity: 0.4;
+    transform: translateX(-60%) scale(0.4);
+  }
+
+  60% {
+    opacity: 0.6;
+    transform: translateX(-40%) scale(0.6);
+  }
+
+  80% {
+    opacity: 0.8;
+    transform: translateX(-20%) scale(0.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

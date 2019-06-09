@@ -1,0 +1,81 @@
+.features {
+  &-container {
+    padding-top: 6.4em;
+    padding-bottom: 7.6em;
+    border-bottom: 1px solid $color-gray;
+  }
+
+  &__block {
+    @include row-flex();
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__box {
+    @include col();
+    @include size(3);
+    @include size-md(6);
+    @include size-xs(9);
+    @include size-xxs(9);
+    transition: 0.5s all ease;
+    text-align: center;
+    &:hover{
+       .features__title{
+       color: $color-red;
+       transition: 0.5s;
+       
+      }
+      .features-icon__wrapper{
+        transition: 0.5s;
+        border: 1px solid $color-red;
+        transform: rotate(45deg);
+        i{
+          transform: rotate(-45deg);
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  &-icon__wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 1px solid $color-gray;
+    display: flex;
+    @include flex-center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+  }
+
+  i {
+    font-size: 1.5em;
+    color: $color-red;
+    transition: 0.5s;
+  }
+
+  &__title {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: $color-gray-dark;
+    letter-spacing: 1.5px;
+    position: relative;
+    transition: 0.5s;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      left: calc(50% - 21px);
+      width: 42px;
+      height: 1.8px;
+      background-color: $color-gray-dark;
+    }
+  }
+  &__text{
+    font-size: 0.8em;
+    line-height: 1.9;
+  }
+}
