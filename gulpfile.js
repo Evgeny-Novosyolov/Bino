@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
+// const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const del = require('del');
@@ -10,6 +10,8 @@ const sourcemaps = require('gulp-sourcemaps');
 const rigger = require('gulp-rigger');
 const imagemin = require('gulp-imagemin');
 const webpack = require('webpack-stream');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
 
 
 
@@ -50,10 +52,7 @@ function styles() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(concat('style.css'))
-    .pipe(autoprefixer({
-      browsers: ['>0.1%'],
-      cascade: false
-    }))
+    .pipe(postcss([ autoprefixer() ]))
     .pipe(cleanCSS({
       level: 2
     }))

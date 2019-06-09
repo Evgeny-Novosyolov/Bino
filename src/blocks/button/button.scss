@@ -8,7 +8,8 @@
   background: transparent;
   cursor: pointer;
   border: 1px solid transparent;
-  box-shadow: 0px 7px 5px -4px rgba(0,0,0,0.1);
+  box-shadow: 0px 7px 5px -4px rgba(0, 0, 0, 0.1);
+
   &:hover {
     background-color: $color-red;
     border: 1px solid transparent;
@@ -19,7 +20,8 @@
   margin: 24px 14px 18px;
   @extend .button;
   border: 1px solid #fff;
-  &:hover{
+
+  &:hover {
     border: 1px solid $color-red;
   }
 }
@@ -33,7 +35,7 @@
   &:hover {
     background-color: $color-gray;
     border: 1px solid $color-gray;
-    
+
   }
 }
 
@@ -43,6 +45,7 @@
   background-color: $color-gray;
   border: 1px solid $color-gray;
   outline: none;
+
   &:hover {
     background-color: $color-red;
     border: 1px solid $color-red;
@@ -59,5 +62,36 @@
   &:hover {
     background-color: $color-gray;
     border: 1px solid $color-gray;
+  }
+}
+
+.span-scroll {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  position: absolute;
+  top: -20px;
+  right: 5%;
+  cursor: pointer;
+
+  .fa-chevron-up {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $color-red;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25);
+    left: 1815px;
+    top: 11200px;
+    width: 53px;
+    height: 53px;
+
+
+
+
   }
 }

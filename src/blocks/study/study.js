@@ -12,11 +12,6 @@
     // console.log(a)
 
 
-
-
-
-
-
   });
   var showText = function (num) {
     if (num === 0) {

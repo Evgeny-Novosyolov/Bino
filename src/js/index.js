@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-// import "import/blocks";
+import "../js/imports/blocks";
 import "../blocks/menu/menu";
 import "../blocks/header/header";
 import "../blocks/services/services";

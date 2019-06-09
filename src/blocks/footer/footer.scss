@@ -3,7 +3,6 @@
     background-color: $color-bg-black;
     background: url("../images/footer-bg.png") center no-repeat;
     background-size: cover;
-
   }
 
   &__block {
@@ -35,10 +34,13 @@
 
   &__contact {
     padding: 23px;
+    position: relative;
+  
   }
 
   .contact {
     background-color: $color-bg-black;
+    
 
     &__block {
       display: flex;
