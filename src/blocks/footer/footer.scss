@@ -60,18 +60,19 @@
     &__item {
       padding: 12px;
       transition: 0.5s;
-      &:hover, &:focus {
-        i{
-          color: $color-red;
-          transition: 0.5s;
-        }
-      }
+     
     }
 
     &__link {
       text-decoration: none;
       color: $color-gray;
       font-size: 1.3em;
+      &:hover, &:focus {
+        i{
+          color: $color-red;
+          transition: 0.5s;
+        }
+      }
       
 
     }
