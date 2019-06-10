@@ -271,11 +271,12 @@
     padding: 1.4em 0;
     border: 1px solid transparent;
     cursor: pointer;
-
+    transition: 0.3s;
     &:hover, &:focus {
       box-sizing: border-box;
       color: $color-red;
       border-bottom: 1px solid $color-red;
+      transition: 0.3s;
     }
   }
 }

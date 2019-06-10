@@ -101,18 +101,23 @@
       outline: none;
       padding: 21px 0 21px 5px;
       width: 100%;
+      cursor: pointer;
       &:hover, &:focus{
         background-color: #fafafa;
       }
     }
 
     textarea {
+      cursor: pointer;
       border: none;
       outline: none;
       padding: 19px 0 19px 5px;
       height: 135px;
       overflow: auto;
       width: 100%;
+      &:hover, &:focus{
+        background-color: #fafafa;
+      }
     }
 
     &__button {

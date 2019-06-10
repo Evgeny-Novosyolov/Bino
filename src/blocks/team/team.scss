@@ -76,15 +76,18 @@
   &__item {
     // max-width: 150px;
     cursor: pointer;
-
+    transition: 0.5s;
     &:hover {
+      transition: 0.5s;
       .team__info {
         opacity: 1;
+        transition: 0.5s;
       }
 
       .team__wrapper-img {
         &::after {
           display: block;
+          transition: 0.5s;
         }
 
         &::before {
@@ -97,7 +100,7 @@
           background-color: rgba($color-red, .5);
           z-index: 1000;
           border-radius: 50%;
-          
+          transition: 0.5s;
         }
 
         img {
@@ -113,6 +116,7 @@
           //   left: 0;
           //   background-color: rgba($color-red, 0.3);
           // }
+          transition: 0.5s;
         }
       }
 
