@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('.box__button--open').on("click", function () {
     $(this).toggleText('Read More', 'Close');
 
-
     openText($(this));
     openBox($(this));
     boxTarget($(this));
@@ -14,9 +13,6 @@ $(document).ready(function () {
   $.fn.extend({
     toggleText: function (a, b) {
       return this.text(this.text() == b ? a : b);
-    },
-    toggleBg: function (a, b) {
-      return this.css(this.css("background-color") == b ? a : b);
     },
   });
 

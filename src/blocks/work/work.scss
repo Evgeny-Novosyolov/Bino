@@ -1,4 +1,4 @@
-.recent {
+.work {
   &-container {
     padding-bottom: 0;
   }
@@ -49,7 +49,7 @@
       min-width: 200px;
       position: relative;
       &:hover{
-        .recent__slider-box--hover{
+        .work__slider-box--hover{
           display: block;
         }
       }
@@ -119,7 +119,7 @@
   
 
 }
-.recent__slider-box--none{
+.work__slider-box--none{
   display: none;
   
 }
