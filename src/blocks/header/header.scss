@@ -72,6 +72,7 @@
   }
 
   &__subtitle {
+    color: #fff;
     font-size: 1.1vmax;
     letter-spacing: 1.2px;
     word-wrap: break-word;
@@ -86,6 +87,7 @@
   }
 
   &__title {
+    color: #fff;
     margin-top: 1.5%;
     font-size: 3.8vmax;
     word-wrap: break-word;
@@ -95,6 +97,7 @@
   }
 
   &__text {
+    color: #fff;
     @include text-core;
     margin: 1% auto 3.8%;
     width: 50%;
@@ -267,10 +270,11 @@
     box-sizing: border-box;
     padding: 1.4em 0;
     border: 1px solid transparent;
+    cursor: pointer;
 
     &:hover {
       box-sizing: border-box;
-      cursor: pointer;
+      color: $color-red;
       border-bottom: 1px solid $color-red;
     }
   }
