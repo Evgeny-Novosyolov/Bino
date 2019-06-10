@@ -17,12 +17,20 @@
     }
 
     &-item {
-      padding: 0 15px;
+      padding: 0 0 0 15px;
       cursor: pointer;
       letter-spacing: 1px;
+      display: flex;
 
       &:hover, &:focus {
         color: $color-red;
+        span{
+          color: $color-gray;
+        }
+      }
+      span{
+        display: block;
+        padding-left: 15px;
       }
     }
 

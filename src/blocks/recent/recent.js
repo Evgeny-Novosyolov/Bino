@@ -13,10 +13,10 @@ $(document).ready(function () {
           }
           $(".recent__slider-box").show(500);
           $(".recent__slider-box").not(item).hide();
-        })
-        indexItem++
-      })
+        });
+        indexItem++;
+      });
     }
   }
-  resentShow()
+  resentShow();
 });
