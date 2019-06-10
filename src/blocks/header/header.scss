@@ -272,7 +272,7 @@
     border: 1px solid transparent;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:focus {
       box-sizing: border-box;
       color: $color-red;
       border-bottom: 1px solid $color-red;

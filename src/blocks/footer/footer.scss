@@ -26,7 +26,7 @@
     background-color: $color-red;
     border: $color-red;
 
-    &:hover {
+    &:hover, &:focus {
       background-color: transparent;
       border: 1px solid #fff;
     }
@@ -58,7 +58,7 @@
 
     &__item {
       padding: 12px;
-      &:hover {
+      &:hover, &:focus {
         i{
           color: $color-red;
         }

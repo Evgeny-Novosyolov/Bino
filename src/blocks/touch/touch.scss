@@ -101,6 +101,9 @@
       outline: none;
       padding: 21px 0 21px 5px;
       width: 100%;
+      &:hover, &:focus{
+        background-color: #fafafa;
+      }
     }
 
     textarea {

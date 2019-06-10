@@ -180,6 +180,9 @@
       line-height: 1.333;
       color: #fff;
       border: transparent;
+      &:hover, &:focus {
+        color: $color-gray-dark;
+      }
 
 
     }
